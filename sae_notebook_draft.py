@@ -730,6 +730,8 @@ print(f"\nFinal: loss={history[-1]['loss']:.4f} recon={history[-1]['recon_loss']
 # we did for neurons in Section 1.
 
 # %%
+# TODO: speed this up — consider lazily formatting examples in the dashboard
+# instead of precomputing for all latents.
 # Stream through data: encode each sequence, track feature frequencies and
 # top-k activating examples per latent. We do NOT store all SAE activations
 # (that would be D_SAE * n_tokens floats — too much memory).
