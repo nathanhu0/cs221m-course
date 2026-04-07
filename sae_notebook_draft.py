@@ -33,7 +33,7 @@ except ImportError:
 if is_colab:
     import plotly.io as pio
     pio.renderers.default = "colab"
-    !git clone https://github.com/cs221m/cs221m-course.git
+    !git clone -b nathan-sae-notebook https://github.com/cs221m/cs221m-course.git
     %cd cs221m-course
     !uv sync
 else:
@@ -405,7 +405,7 @@ def find_and_show_top_neuron_examples(data, neuron_idx, top_k=8, layer_idx=LAYER
 # ### ✏️ Exercise 1.2
 #
 # Look at the max-activating examples for neuron L3.N609 across the corpus.
-# Does this confirm your hypothesis from Exercise 1.1?
+# Does this support your hypothesis from Exercise 1.1?
 
 # %%
 find_and_show_top_neuron_examples(layer3_data, 609, title="Layer 3, Neuron 609 — max activating examples", show_logits=False)
