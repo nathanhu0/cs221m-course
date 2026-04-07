@@ -20,6 +20,8 @@
 #
 # In this notebook we'll study [Pythia-70M](https://huggingface.co/EleutherAI/pythia-70m-v0),
 # a small (70M param) language model trained by [EleutherAI](https://www.eleuther.ai/).
+#
+# *(Tested on Colab L4 runtime.)*
 
 # %%
 from IPython.display import clear_output
@@ -33,7 +35,7 @@ except ImportError:
 if is_colab:
     import plotly.io as pio
     pio.renderers.default = "colab"
-    !git clone -b nathan-sae-notebook https://github.com/cs221m/cs221m-course.git
+    !git clone -b nathan-sae-notebook https://github.com/nathanhu0/cs221m-course.git
     %cd cs221m-course
     !uv sync
 else:
